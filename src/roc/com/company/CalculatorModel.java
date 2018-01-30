@@ -10,5 +10,5 @@ public class CalculatorModel {
 
     public int getCalculatorValue() {
         return calculatorValue;
-    }
+    } 
 }
