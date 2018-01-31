@@ -8,7 +8,7 @@ public class CalculatorController {
     private CalculatorView theView;
     private CalculatorModel theModel;
 
-    private CalculatorController(CalculatorView theView, CalculatorModel theModel){
+    public CalculatorController(CalculatorView theView, CalculatorModel theModel){
 
         this.theView = theView;
         this.theModel = theModel;
