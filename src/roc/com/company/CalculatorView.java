@@ -30,16 +30,14 @@ public class CalculatorView extends JFrame
     public int getFirstNumber(){
         return Integer.parseInt(firstNumber.getText());
     }
-
-    public int getSecondNumber(){
+    public int getSecondNumber() {
         return Integer.parseInt(secondNumber.getText());
     }
-
-    public int getcalculatorSolution(){
+    public int getCalcSolution(){
         return Integer.parseInt(calculatorSolution.getText());
     }
 
-    public void setCalculateButton(int solution) {
+    public void setCalculatorSolution(int solution){
         calculatorSolution.setText(Integer.toString(solution));
     }
 
@@ -47,6 +45,8 @@ public class CalculatorView extends JFrame
         calculateButton.addActionListener(listenForCalcButton);
     }
 
-
+    void displayErrorForMessage(String errorMessage){
+        JOptionPane.showMessageDialog(this, errorMessage);
+    }
 
 }
